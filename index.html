@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
+    <link rel="icon" href="devchallenges.png" />
+    <link  rel="shortcut icon" type="image/x-icon" href="./devchallenges.png"/>
+    <link rel="stylesheet" href="main.css">
+    <title>Devchallenges</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <main>
+      <h1>Checkout</h1>
+      <section class="container">
+        <section class="product-container">
+          <div class="card1">
+            <img src="./photo1.png" alt="">
+            <h3>Vintage Backbag</h3>
+            <p style="grid-column-start: 2;">$54.99 <del>$94.99</del></p>
+        
+            <div class="counter-container">
+              <button id="restar">-</button>
+              <p id="counter">1</p>
+              <button id="sumar">+</button>
+            </div>
+          </div>
+          <div class="card1">
+            <img src="./photo2.png" alt="">
+            <h3>Levi Shoes</h3>
+            <p style="grid-column-start: 2;">$74  .99 <del>$124.99</del></p>
+        
+            <div class="counter-container">
+              <button id="restar">-</button>
+              <p id="counter">1</p>
+              <button id="sumar">+</button>
+            </div>
+          </div>
+            <div class="info-container">
+             <table>
+               <tr>
+                 <td >shipping</td>
+                 <td class="tabla-izquierda" >$19</td>
+               </tr>
+               <tr>
+                 <td >Total</td>
+                 <td class="tabla-izquierda"  >$148.99</td>
+               </tr>
+             </table>
+            </div>
+        </section>
+        <section class="form-container">
+          <form action="">
+            <h3>Contact Information</h3>
+            <label  for="mail">E-mail:</label>
+            <input class="mail-input" type="text" placeholder="Enter your email..">
+
+            <label  for="phone">Phone:</label>
+            <input class="phone-input" type="text" placeholder="Enter your phone..">
+
+            <h3>Shipping Adress</h3>
+            <label  for="name">Full Name</label>
+            <input class="name-input" type="text" placeholder=" your Name..">
+
+            <label  for="Address">Address</label>
+            <input class="address-input" type="text" placeholder=" your Adress..">
+
+            <label  for="City">City</label>
+            <input class="city-input" type="text" placeholder=" your City..">
+              <div class="form-grid">
+            <label  for="Country">Country</label>
+            <select name="country" id="" placeholder="your country">
+              <option value="1">Argentina</option>
+              <option value="2">Brazil</option>
+              <option value="3">Mexico</option>
+              <option value="4">Peru</option>
+            </select>
+
+            <label class="label-postal-code" for="Postal code">Postal code</label>
+            <input class="postalcode-input" type="text" placeholder="your Postal code..">
+
+            <input class="input-save" type="checkbox" name="save">
+            <label class="label-save" for="save">save  info for next time</label>
+            <button>continue</button>
+          </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

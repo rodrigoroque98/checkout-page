@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+h1{
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 120px;
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    color: #4E5150;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+/* PRODUCT CONTAINER*/
+
+.container .product-container{
+    width: 400px;
+    height: 500px;
+    background-color: #F2F2F2;
+    display: grid;
+    flex-direction: column;
+    grid-template-rows: 40% 40% 20%;
+    border-radius: 16px;
+
+}
+
+.product-container .card1{
+    width: 400px;
+    height: 166px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:  25% 25% 50%;
+    
+}
+.container .product-container .card1 img{
+    width: 160px;
+    height: 130px;
+    border-radius: 16px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    margin-top: 15px;
+margin-left: 15px;
+}
+
+.product-container .card1 h3{
+    color: #4E5150;
+    align-self: center;
+}
+.product-container .card1  p{
+    font-size: 1.4rem;
+    color: #F2994A;
+    align-self: center;
+}
+.product-container .card1  p del{
+    font-size: 1rem;
+    color: #4E5150;
+}
+.product-container .card1 .counter-container{
+    border: 1px solid #828282;
+    border-radius: 16px;
+    grid-column-start: -2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    align-self: center;
+    display: flex;
+    width: 120px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-container #counter{
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    color: #333333;
+}
+.counter-container button{
+    height: 20px;
+    width: 20px;
+    background-color: #E0E0E0;
+    color: #828282;
+    border-radius: 4px;
+
+}
+.container .product-container .card2 img{
+    width: 160px;
+    height: 130px;
+    border-radius: 16px;
+}
+
+.product-container .info-container{
+    display: flex;
+    justify-content: center;
+}
+
+.info-container table{
+    width: 85%;
+  
+}
+
+.info-container table td{
+    height: 20px;
+    font-size: 1.4rem;
+    border-top: 1px solid #BDBDBD;
+    padding: 4px;
+    color: #333333;
+    font-size: 1.4rem;
+}
+
+.info-container table tr .tabla-izquierda{
+    text-align: end;
+}
+
+/* FORM CONTAINER*/
+
+.container .form-container{
+ width: 400px;
+height: 300px;
+
+}
+
+.form-container form{
+display: flex;
+flex-direction: column;
+}
+
+.form-container form h3{
+    width: 180px;
+    height: 16px;
+    font-size: 1.4rem;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.form-container form label{
+    font-size: 1rem;
+    color: #4F4F4F;
+}
+.form-container form input{
+    margin-bottom: 15px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #828282;
+
+}
+.form-container form .form-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 30% 20% 30%;
+    column-gap: 10px;
+    height: 150px;
+}
+
+.form-grid select{
+    grid-column-start: 1;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #828282;
+}
+
+.form-grid .label-postal-code{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.form-grid button{
+    grid-column-start: 2;
+    grid-row-start: 4;
+    background-color: #F2994A;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none
+    ;height: 50px;
+}
+
+.form-grid .input-save{
+    width: 15px;
+    height: 15px;
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+.form-grid .label-save{
+    text-align: center;
+    font-size: 1rem;
+    width: 150px;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    margin-left: 10px;
+}
+
+/*ICONOS EN INPUTS*/
+
+.form-container form .mail-input{
+    background-image: url('./assets/email_black_24dp.svg');
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    background-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+    
+}
+.form-container form .phone-input{
+    background-image: url('./assets/phone_black_24dp.svg');
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    background-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+    
+}
+.form-container form .name-input{
+    background-image: url('./assets/account_circle_black_24dp.svg');
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    background-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+    
+}
+.form-container form .address-input{
+    background-image: url('./assets/home_black_24dp.svg');
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    background-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+    
+}
+.form-container form .city-input{
+    background-image: url('./assets/apartment_black_24dp.svg');
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    background-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+    
+}
+.form-container form .postalcode-input{
+    background-image: url('./assets/email_black_24dp.svg');
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    background-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+    
+}
+@media (min-width: 900px) { 
+    
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items:baseline;
+}
+
+.container .form-container{
+    position: relative;
+    bottom: 120px;
+}}
